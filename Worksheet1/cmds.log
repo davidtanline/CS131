@@ -1,0 +1,148 @@
+    1  passwd
+    2  wget www.github.com
+    3  ls
+    4  cd ~/Desktop
+    5  mkdir Worksheet1
+    6  ls
+    7  cd Worksheet1
+    8  git init
+    9  touch davidtan.txt
+   10  ls
+   11  git status
+   12  git add davidtan.txt
+   13  git status
+   14  git commit -m "Add davidtan text file"
+   15  git config --global user.email "david.tan02@sjsu.edu"
+   16  git commit -m "Add davidtan text file"
+   17  git config user.email "david.tan02@sjsu.edu"
+   18  git commit -m "Add davidtan text file"
+   19  git config user.name "davidsp24@sjsu"
+   20  git commit -m "Add davidtan text file"
+   21  git checkout -b my-new-branch
+   22  git branch
+   23  git remote add origin git@github.com:davidtanline/CS131.git
+   24  git push -u origin master
+   25  git config user.email "davidtanline@gmail.com"
+   26  git push -u origin master
+   27  git status
+   28  git branch master
+   29  git checkout master
+   30  git status
+   31  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   32  brew -v
+   33  ls
+   34  cd Worksheet1
+   35  ls
+   36  git status
+   37  cd ~/.ssh && ssh-keygen
+   38  cat id_rsa.pub
+   39  cd ~
+   40  ls
+   41  cd Worksheet1
+   42  ls
+   43  git status
+   44  git branch
+   45  ls
+   46  git add .
+   47  git status
+   48  vi davidtan.txt
+   49  git status
+   50  git add .
+   51  git status
+   52  git commit -m 'Add sample file'
+   53  git remote add origin git@github.com:davidtanline/CS131.git
+   54  git push -u origin master
+   55  git log
+   56  git revert 6db5b9631e70a3605b2899582dc93e0a516dc501
+   57  ls
+   58  cat davidtan.txt
+   59  vi davidtan.txt
+   60  cat davidtan.txt
+   61  vi davidtan.txt
+   62  ls
+   63  cat davidtan.txt
+   64  cd ..
+   65  ls
+   66  cat index.html
+   67  git add Worksheet1
+   68  ls
+   69  git status
+   70  mv Worksheet1 Folders
+   71  ls
+   72  cd Folders
+   73  ls
+   74  mkdir Worksheet1
+   75  mv davidtan.txt /Worksheet1
+   76  mv davidtan.txt ./Worksheet1
+   77  ls
+   78  cd Worksheet1/
+   79  ls
+   80  cd ..
+   81  ls
+   82  git status
+   83  rm .davidtan.txt.swp
+   84  ls
+   85  git status
+   86  git add .
+   87  git commit -m 'Restructure'
+   88  git push
+   89  git branch
+   90  git push origin my-new-branch
+   91  ls
+   92  cd Worksheet1/
+   93  vi davidtan.txt 
+   94  cd ..
+   95  ls
+   96  git status
+   97  git branch
+   98  git add .
+   99  git commit -m 'push to other branch'
+  100  git push origin my-new-branch
+  101  git pull origin master
+  102  git branch
+  103  git log
+  104  git revert c2e83737d33658af17e593f8e801f65945ee415b
+  105  ls
+  106  cd Worksheet1/
+  107  cat davidtan.txt 
+  108  git branch
+  109  git checkout my-new-branch
+  110  ls
+  111  git pull origin master
+  112  git pull
+  113  git fetch
+  114  cd ..
+  115  ls
+  116  git pull origin master
+  117  ls
+  118  cd Worksheet1/
+  119  ls
+  120  vi davidtan.txt 
+  121  cd ..
+  122  git status
+  123  git add .
+  124  git commit -m 'Push to other branch'
+  125  git push origin my-new-branch
+  126  git pull
+  127  ls
+  128  cd Worksheet1/
+  129  ls
+  130  vi davidtan.txt 
+  131  git status
+  132  vi davidtan.txt 
+  133  git status
+  134  git add .
+  135  git commit -m 'add'
+  136  git push origin my-new-branch
+  137  git pull origin master
+  138  git checkout master
+  139  git pull origin master
+  140  git log
+  141  git checkout my-new-branch
+  142  ls
+  143  git pull origin master
+  144  git push origin my-new-branch
+  145  git push -f origin my-new-branch
+  146  git checkout master
+  147  git pull origin master
+  148  history > cmds.log
