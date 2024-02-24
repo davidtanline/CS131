@@ -1,0 +1,2 @@
+196 - This is the number of lines that are in the Music category
+654 - This is the word count of records that are in the Music category
