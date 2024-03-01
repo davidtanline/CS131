@@ -1,0 +1,34 @@
+1) no terminal output
+
+2) /bin/bash
+/mnt/scratch/FA23_CS131_Ashish/davidsp24
+
+3) uid=1178(davidsp24) gid=1178(davidsp24) groups=1178(davidsp24),77(S77)
+
+4) touch: cannot touch 'test.txt': Permission denied
+
+5) no terminal output
+
+6) total        used        free      shared  buff/cache   available
+Mem:          71367       32972       19070        3555       19324       33381
+Swap:          4119           0        4119
+
+9) NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+
+10) lrwxrwxrwx. 1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release

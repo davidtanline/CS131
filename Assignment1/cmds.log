@@ -1,0 +1,347 @@
+    1  passwd
+    2  wget www.github.com
+    3  ls
+    4  cd ~/Desktop
+    5  mkdir Worksheet1
+    6  ls
+    7  cd Worksheet1
+    8  git init
+    9  touch davidtan.txt
+   10  ls
+   11  git status
+   12  git add davidtan.txt
+   13  git status
+   14  git commit -m "Add davidtan text file"
+   15  git config --global user.email "david.tan02@sjsu.edu"
+   16  git commit -m "Add davidtan text file"
+   17  git config user.email "david.tan02@sjsu.edu"
+   18  git commit -m "Add davidtan text file"
+   19  git config user.name "davidsp24@sjsu"
+   20  git commit -m "Add davidtan text file"
+   21  git checkout -b my-new-branch
+   22  git branch
+   23  git remote add origin git@github.com:davidtanline/CS131.git
+   24  git push -u origin master
+   25  git config user.email "davidtanline@gmail.com"
+   26  git push -u origin master
+   27  git status
+   28  git branch master
+   29  git checkout master
+   30  git status
+   31  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   32  brew -v
+   33  ls
+   34  cd Worksheet1
+   35  ls
+   36  git status
+   37  cd ~/.ssh && ssh-keygen
+   38  cat id_rsa.pub
+   39  cd ~
+   40  ls
+   41  cd Worksheet1
+   42  ls
+   43  git status
+   44  git branch
+   45  ls
+   46  git add .
+   47  git status
+   48  vi davidtan.txt
+   49  git status
+   50  git add .
+   51  git status
+   52  git commit -m 'Add sample file'
+   53  git remote add origin git@github.com:davidtanline/CS131.git
+   54  git push -u origin master
+   55  git log
+   56  git revert 6db5b9631e70a3605b2899582dc93e0a516dc501
+   57  ls
+   58  cat davidtan.txt
+   59  vi davidtan.txt
+   60  cat davidtan.txt
+   61  vi davidtan.txt
+   62  ls
+   63  cat davidtan.txt
+   64  cd ..
+   65  ls
+   66  cat index.html
+   67  git add Worksheet1
+   68  ls
+   69  git status
+   70  mv Worksheet1 Folders
+   71  ls
+   72  cd Folders
+   73  ls
+   74  mkdir Worksheet1
+   75  mv davidtan.txt /Worksheet1
+   76  mv davidtan.txt ./Worksheet1
+   77  ls
+   78  cd Worksheet1/
+   79  ls
+   80  cd ..
+   81  ls
+   82  git status
+   83  rm .davidtan.txt.swp
+   84  ls
+   85  git status
+   86  git add .
+   87  git commit -m 'Restructure'
+   88  git push
+   89  git branch
+   90  git push origin my-new-branch
+   91  ls
+   92  cd Worksheet1/
+   93  vi davidtan.txt 
+   94  cd ..
+   95  ls
+   96  git status
+   97  git branch
+   98  git add .
+   99  git commit -m 'push to other branch'
+  100  git push origin my-new-branch
+  101  git pull origin master
+  102  git branch
+  103  git log
+  104  git revert c2e83737d33658af17e593f8e801f65945ee415b
+  105  ls
+  106  cd Worksheet1/
+  107  cat davidtan.txt 
+  108  git branch
+  109  git checkout my-new-branch
+  110  ls
+  111  git pull origin master
+  112  git pull
+  113  git fetch
+  114  cd ..
+  115  ls
+  116  git pull origin master
+  117  ls
+  118  cd Worksheet1/
+  119  ls
+  120  vi davidtan.txt 
+  121  cd ..
+  122  git status
+  123  git add .
+  124  git commit -m 'Push to other branch'
+  125  git push origin my-new-branch
+  126  git pull
+  127  ls
+  128  cd Worksheet1/
+  129  ls
+  130  vi davidtan.txt 
+  131  git status
+  132  vi davidtan.txt 
+  133  git status
+  134  git add .
+  135  git commit -m 'add'
+  136  git push origin my-new-branch
+  137  git pull origin master
+  138  git checkout master
+  139  git pull origin master
+  140  git log
+  141  git checkout my-new-branch
+  142  ls
+  143  git pull origin master
+  144  git push origin my-new-branch
+  145  git push -f origin my-new-branch
+  146  git checkout master
+  147  git pull origin master
+  148  history > cmds.log
+  149  ls
+  150  git branch
+  151  git status
+  152  git add .
+  153  git commit -m 'Add history of commands file'
+  154  git push
+  155  ls
+  156  cd Folders
+  157  ls
+  158  mkdir Worksheet2
+  159  cd Worksheet2
+  160  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  161  ls
+  162  man cat
+  163  grep "United States" 'Global YouTube Statistics.csv'
+  164  grep "Music" Global YouTube Statistics.csv
+  165  grep "Music" 'Global YouTube Statistics.csv'
+  166  ls
+  167  cd Folders
+  168  ls
+  169  cd Worksheet2
+  170  ls
+  171  grep -E '^([^,]*,){9}[^,]*Music([^,]*,|$)' 'Global YouTube Statistics.csv'
+  172  grep -E '[^,]*Music' 'Global YouTube Statistics.csv'
+  173  grep -E '[^,]*Music([^,]*)' 'Global YouTube Statistics.csv'
+  174  grep -E '^([^,]*,){9}[^,]*Music([^,]*,|$)' 'Global YouTube Statistics.csv'
+  175  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv'
+  176  grep -E '{9}[^,]*Music' 'Global YouTube Statistics.csv'
+  177  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv'
+  178  wc -l grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv' 
+  179  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  180  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv' | wc -w
+  181  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv'
+  182  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv' | wc -c
+  183  grep -E '^([^,]*,){9}[^,]*Music([^,]*,|$)' 'Global YouTube Statistics.csv' | wc -w
+  184  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv' | wc -w
+  185  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  186  wc -w 'Global YouTube Statistics.csv'
+  187  grep -E '^([^,]*,){7}[^,]*United States' 'Global YouTube Statistics.csv'
+  188  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv'
+  189  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  190  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv' | wc -w
+  191  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l > counts.txt
+  192  ls
+  193  cat counts.txt
+  194  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv' | wc -w >> counts.txt
+  195  ls
+  196  cat counts.txt
+  197  vi counts.txt
+  198  wc -l 'Global YouTube Statistics.csv'
+  199  grep -E '^([^,]*,){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -w >> counts.txt
+  200  grep -E '^([^,]*,){4}[^,]*Music' 'Global YouTube Statistics.csv'
+  201  grep -E '^([^,]*,){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  202  grep -E '^([^,]*,){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -w
+  203  grep -E '^([^,]*,){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l > counts.txt
+  204  grep -E '^([^,]*,){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -w >> counts.txt
+  205  cat counts.txt
+  206  vi counts.txt
+  207  cat counts.txt
+  208  cat history
+  209  echo history
+  210  history > cmds.log
+  211  cat cmds.log
+  212  git status
+  213  cd ..
+  214  ls
+  215  git status
+  216  git add .
+  217  git commit -m 'Add Worksheet 2'
+  218  git rm --cached 'Worksheet2/Global YouTube Statistics.csv'
+  219  git status
+  220  git commit -m 'fix'
+  221  git push
+  222  cd Worksheet2
+  223  ls
+  224  ls
+  225  cd Folders
+  226  ls
+  227  cd Worksheet2
+  228  ls
+  229  cat cmds.log
+  230  grep -E '^([^,]*,){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  231  grep '^([^,]*,){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  232  grep -E '^([^,]*,){5}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  233  grep -E '^([^,]*,){3}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  234  grep -E '^([^,]*,){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  235  man wc
+  236  grep -E '^([^,]*,){9}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  237  grep -E '^([^,]*,){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  238  cat 'Global YouTube Statistics.csv' 
+  239  grep -E '^([^,]*,){4}[^,]Music' 'Global YouTube Statistics.csv' | wc -l
+  240  grep -E '^([^,]*,){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  241  grep -E '^([^,]*,){4}[^,]*Music,|$)' 'Global YouTube Statistics.csv' | wc -l
+  242  grep -E '^([^,]*,){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  243  grep -E '^([^,]\+){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  244  grep -E '^([^,]\+,){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  245  grep -E '^[^,]\+,[^,]\+,[^,]\+,[^,]\+,Music,'\ 'Global YouTube Statistics.csv' | wc -l
+  246  grep -E '^[^,]\+,[^,]\+,[^,]\+,[^,]\+,Music,' 'Global YouTube Statistics.csv' | wc -l
+  247  grep "^[^,]\+,[^,]\+,[^,]\+,[^,]\+,Music," 'Global YouTube Statistics.csv' | wc -l
+  248  awk -F, '$5 == Music' 'Global YouTube Statistics.csv' 
+  249  awk
+  250  grep "^[^,]\+,[^,]\+,[^,]\+,[^,]\+,Music," 'Global YouTube Statistics.csv' | wc -l
+  251  awk -F, '$5 == "Music"' 'Global YouTube Statistics.csv' 
+  252  awk -F, '$5 == "Music"' 'Global YouTube Statistics.csv' | wc -l
+  253  grep -E '^([^,]*,){4}[^,]*Music' 'Global YouTube Statistics.csv' | wc -l
+  254  grep -E '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -l
+  255  grep -E '^([^,]*[,]){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -l
+  256  grep -E '^([^,]*,){4}[^,][Music],' 'Global YouTube Statistics.csv' | wc -l
+  257  grep -E '^([^,]*,){4}[^,]"Music",' 'Global YouTube Statistics.csv' | wc -l
+  258  grep -E '^([^,]*,){4}[^,]Music,' 'Global YouTube Statistics.csv' | wc -l
+  259  grep -E '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -l
+  260  grep -E '^(*,){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -l
+  261  grep -E '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -l
+  262  grep -E '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv'
+  263  LC_ALL-C grep -E '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -l
+  264  LC_ALL=C grep -E '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -l
+  265  grep -E '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv'
+  266  grep -E '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -l
+  267  locale
+  268  LC_ALL=C grep -E '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -w
+  269  LC_ALL=C grep -E '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -l
+  270  grep -F -E '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -l
+  271  grep -E '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -l
+  272  man grep
+  273  grep -e '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -l
+  274  grep -E '^([^,]*,){4}[^,]*Music,' 'Global YouTube Statistics.csv' | wc -l
+  275  ls
+  276  cat index.html
+  277  ls
+  278  cd Folders
+  279  mv .git ~
+  280  ls
+  281  mv Worksheet1 ~
+  282  mv Worksheet2 ~
+  283  ls
+  284  cd ..
+  285  ls
+  286  git status
+  287  ls
+------------------------------------------------
+1) mkdir Assignment1
+------------------------------------------------
+  289  ls
+------------------------------------------------
+2) echo $SHELL
+------------------------------------------------
+  291  cd Assignment1
+  292  ls
+  293  echo $SHELL
+------------------------------------------------
+2) echo $HOME
+------------------------------------------------
+3) id
+------------------------------------------------
+4) mkdir myDir
+------------------------------------------------
+  297  man chmod
+  298  ls
+------------------------------------------------
+4) chmod u-w myDir
+------------------------------------------------
+  300  cd myDir
+  301  ls
+  302  cd ..
+  303  ls
+  304  ls -l
+  305  cd myDir
+  306  touch test.txt
+  307  ls
+  308  cd ..
+------------------------------------------------
+5) mkdir myDir2
+5) mkdir myDir3
+------------------------------------------------
+6) cd myDir2
+  312  ls
+  313  touch myFile.txt
+  314  ls
+  315  mv myFile.txt ../myDir3
+------------------------------------------------
+  316  ls
+  317  cd ..
+  318  ls
+  319  cd myDir3
+  320  ls
+  321  free
+  322  man free
+  323  free -h
+  324  man free
+------------------------------------------------
+6) free --mebi
+------------------------------------------------
+9) cat /etc/os-release
+------------------------------------------------
+10) ls -l /etc/os-release
+------------------------------------------------
+  328  ls
+  329  cd Assignment1
+  330  history > cmds.log
