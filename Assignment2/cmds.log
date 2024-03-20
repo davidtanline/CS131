@@ -1,0 +1,64 @@
+  351  mkdir Assignment2
+  352  cd Assignment2
+--------------------------------------------------------------------------------
+QUESTION 1
+  353  find /etc -type f > one.txt 2> two.txt
+  354  ls
+  355  cat one.txt
+  356  cat two.txt
+--------------------------------------------------------------------------------
+  357  man cut
+  358  man sort
+  359  cd ..
+  360  ls
+  361  cd Assignment1
+  362  ls
+  363  cd ..
+  364  cd Worksheet2
+  365  ls
+  366  cp 'Global YouTube Statistics.csv' /Assignment2/
+  367* 
+  368  cd ~
+  369  ls
+  370  cd Assignment2
+  371  ls
+  372  man sort
+  373  man cut
+  374  man sort
+  375  ls
+  376  cut -d ‘,’ -f 20,21 ‘csv’ | sort -t ‘,’ -k2M -k1n | uniq -c | cat
+  377  cut -d ',' -f 20,21 'Global YouTube Statistics.csv' | sort -t ',' -k2M -k1n | uniq -c | cat
+  378  cut -d ',' -f 20,21 'Global YouTube Statistics.csv' | sort -t ',' -k2M -k1n | uniq -c | sort -nr | cat
+--------------------------------------------------------------------------------
+QUESTION 2
+  379  cut -d ',' -f 20,21 'Global YouTube Statistics.csv' | sort -t ',' -k2M -k1n | uniq -c | sort -nr | head -n 3
+--------------------------------------------------------------------------------
+  380  whoami
+--------------------------------------------------------------------------------
+QUESTION 3
+  381  ps -u davidsp24
+--------------------------------------------------------------------------------
+  382  cut -d ',' -f 21,20 'Global YouTube Statistics.csv' | sort -t ',' -k1M -k2n | uniq -c | sort -nr | head -n 3
+  383  cut -d ',' -f 21,20 'Global YouTube Statistics.csv' | head -n 3
+  384  cut -d ',' -f 20,21 'Global YouTube Statistics.csv' | head -n 3
+  385  cut -d ',' -f 21,20 'Global YouTube Statistics.csv' | head -n 3
+  386  man cut
+  387  man uniq
+  388  cut -d ',' -f 20,21 'Global YouTube Statistics.csv' | sort -t ',' -k2M -k1n | uniq -c | sort -nr | head -n 3
+  389  ps -u davidsp24
+  390  cut -d ',' -f 20,21 'Global YouTube Statistics.csv' | sort -t ',' -k1n -k2M | uniq -c | sort -nr | head -n 3
+  391  ps -u davidsp24
+  392  cut -d ',' -f 20,21 'Global YouTube Statistics.csv' | sort -t ',' -k1n -k2M | uniq -c | sort -r | head -n 3
+  393  cut -d ',' -f 20,21 'Global YouTube Statistics.csv' | sort -t ',' -k1n -k2M | uniq -c | sort -nr | head -n 3
+  394  ps -u davidsp24
+----------------------------------------------------------------------------------
+QUESTION 4
+  395  vi file.txt
+  -- note: also used ps -u davidsp24 in the second terminal
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+QUESTION 5
+  396  ps aux
+  397  pgrep systemd
+----------------------------------------------------------------------------------
+  398  history > cmds.log

@@ -1,0 +1,78 @@
+-----QUESTION 1----- 
+a. We are finding files in the /etc directory. We are redirecting the output of the command in one.txt and any errors in two.txt.
+b. The file one.txt contains all the files in the /etc directory and the file two.txt contains all the errors that occurred.
+
+-----QUESTION 2-----
+1. March, 2006 with 15 channels
+2. July, 2014 with 13 channels
+3. August, 2014 with 12 channels
+
+The command used to find it was this: cut -d ',' -f 20,21 'Global YouTube Statistics.csv' | sort -t ',' -k2M -k1n | uniq -c | sort -nr | head -n 3
+
+Explanation:
+I used cut to get the created_year and created_month columns.
+-d ',' was used for comma delimiter, 
+-f 20,21 was used to get the 20th and 21st columns (created_year and created_month).
+ 
+For the sorting, -k2M sorts the second column by month, -k1n sorts the first column by number.
+
+The command uniq -c was to get the count of each unique year/month combination.
+
+Sort -nr sorts the list by descending order so the most frequent entries would appear at the top of the list.
+
+head -n 3 displays the first 3 of the list.
+
+Output of the command:
+15 2006,Mar
+13 2014,Jul
+12 2014,Aug
+
+-----Question 3-----
+Command: ps -u davidsp24
+Output:   
+    PID TTY          TIME CMD
+2339966 ?        00:00:05 systemd
+2339968 ?        00:00:00 (sd-pam)
+2339974 ?        00:00:00 sshd
+2339998 pts/0    00:00:00 bash
+2386277 pts/0    00:00:00 ps
+
+-----Question 4-----
+Output while vim is running:
+    PID TTY          TIME CMD
+2339966 ?        00:00:06 systemd
+2339968 ?        00:00:00 (sd-pam)
+2339974 ?        00:00:00 sshd
+2339998 pts/0    00:00:00 bash
+2388228 ?        00:00:00 sshd
+2388231 pts/2    00:00:00 bash
+2390227 pts/0    00:00:00 vim
+2390381 pts/2    00:00:00 ps
+
+Observations: There is a new sshd, bash, and vim process. The process ID for vim is 2390227.
+
+Output after vim closes:
+    PID TTY          TIME CMD
+2339966 ?        00:00:06 systemd
+2339968 ?        00:00:00 (sd-pam)
+2339974 ?        00:00:00 sshd
+2339998 pts/0    00:00:00 bash
+2388228 ?        00:00:00 sshd
+2388231 pts/2    00:00:00 bash
+2390925 pts/2    00:00:00 ps
+
+Observations: The vim process is no longer part of the list. This is because we quit the vim in the other terminal.
+
+-----Question 5-----
+The init process is the first process that is started by the kernel during the boot process. It has a PID of 1.
+It continues running until system shuts down. The role of init is to create processes by starting the scripts stored
+in /etc/inittab.
+
+The "ps aux" command could be used to view all running processes; the init process would be the first one on the list.
+
+-----Question 6-----
+The "ps aux" command is used for retrieving information about running processes.
+It provides a comprehensive list of running processes that includes their PIDs, CPU and memory usage, the user under which
+the process is running, and other important details.
+The "aux" part of the command returns an output that displays the most amount of useful information to a user compared to other
+similar options to the ps command.
